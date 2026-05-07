@@ -6,6 +6,7 @@
         <title>Scaffold Demo — flexocss</title>
         <meta name="description" content="A complete real-world page template built with flexocss.">
         <link rel="stylesheet" href="<?= base_url('assets/css/lib/flexo.min.css') ?>">
+        <link rel="icon" type="image/x-icon" href="<?= base_url('favicon.ico') ?>">
         <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
         <style>
                 /* ── Monochrome overrides for scaffold demo ── */

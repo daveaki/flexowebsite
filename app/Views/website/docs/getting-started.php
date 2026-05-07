@@ -6,7 +6,8 @@
                 <title><?= esc($title) ?> - <?= SITE_NAME ?></title>
                 <meta name="description" content="<?= esc($description) ?>">
                 <link rel="stylesheet" href="<?= base_url('assets/css/lib/flexo.min.css') ?>">
-                <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
+                <link rel="icon" type="image/x-icon" href="<?= base_url('favicon.ico') ?>">
+        <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
                 <script src="<?= base_url('assets/js/app.js') ?>" defer></script>
         </head>
         <body class="docs-page">
