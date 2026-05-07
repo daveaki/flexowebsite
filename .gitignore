@@ -1,0 +1,31 @@
+# Dependencies
+vendor/
+node_modules/
+
+# CodeIgniter writable
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+!writable/cache/.gitkeep
+!writable/logs/.gitkeep
+!writable/session/.gitkeep
+!writable/uploads/.gitkeep
+
+# Environment
+.env
+env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+nbproject/private/
+.vscode/
+
+# Build artifacts
+builds
+
+# Claude
+.claude/launch.json

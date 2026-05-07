@@ -1,0 +1,36 @@
+/* CSS Flexo */
+@use "sass:list";
+@use "sass:math";
+@use "config" as cfg;
+@use "mixin_components" as mc;
+@use "reset" as reset;
+
+
+
+@if(cfg.$transition)
+{
+    div
+    {
+            transition: width cfg.$transitionTime cfg.$transitionEasing,
+            margin-left cfg.$transitionTime cfg.$transitionEasing,
+            flex cfg.$transitionTime cfg.$transitionEasing,
+            min-height cfg.$transitionTime cfg.$transitionEasing;
+    }
+
+}
+
+@include mc.flexScaffold(cfg.$bp, cfg.$mediaQuery, cfg.$box);
+@include mc.flexUtils($bps:cfg.$bp, $mqs:cfg.$mediaQuery);
+@include mc.positioningAndFilling();
+@include mc.textUtils(cfg.$bp, cfg.$mediaQuery);
+@include mc.imagesUtils();
+@include mc.zIndexUtils();
+@include mc.vpUtils(1);
+@include mc.visibilityUtils(cfg.$bp, cfg.$mediaQuery);
+@include mc.orderUtils($bps:cfg.$bp, $mqs:cfg.$mediaQuery, $order-min:cfg.$orderMin, $order-max:cfg.$orderMax);
+
+
+//######################## WIREFRAME MODULE ########################
+@include mc.wireframe();
+
+
